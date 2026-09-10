@@ -1,0 +1,39 @@
+{
+  "output": "assets.txt",
+  "logfile": "assets.log",
+  "module": {
+    "fofa": {
+      "url": "https://fofa.info/api/v1/search/all",
+      "email": "请填写你的FOFA邮箱",
+      "token": "请填写你的FOFA API Token",
+      "full": false,
+      "interval": 0.5,
+      "retries": 5,
+      "state_dir": "fofa_cidr_state",
+      "query": "icon_hash==\"-1200473251\" || title=\"hermes studio\""
+    },
+    "hunter": {
+      "url": "https://hunter.qianxin.com/openApi/search",
+      "keys": [
+        "请填写你的Hunter API Key"
+      ],
+      "all": true,
+      "size": 1000,
+      "pageSize": 100,
+      "query": "web.title=\"hermes studio\"||web.icon==\"6802d0a3b79fe23178a930507eee2a6d\""
+    },
+    "quake": {
+      "url": "https://quake.360.net/api/v3/search/quake_service",
+      "keys": [
+        "请填写你的Quake API Key"
+      ],
+      "all": true,
+      "size": 1000,
+      "pageSize": 500,
+      "latest": true,
+      "interval": 3,
+      "adaptive": true,
+      "query": "title: \"hermes studio\""
+    }
+  }
+}

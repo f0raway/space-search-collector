@@ -1,0 +1,15 @@
+# 真实配置 (含 API 凭据) 绝不入库, 只提交 config.example.json
+config.json
+
+# 采集输出与断点
+*.txt
+*.log
+*.csv
+fofa_cidr_state/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
