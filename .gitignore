@@ -6,6 +6,7 @@ config.json
 *.log
 *.csv
 fofa_cidr_state/
+quake_cidr_state/
 
 # Python
 __pycache__/
@@ -13,3 +14,7 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# 任务锁和测试缓存
+*.lock
+.pytest_cache/
